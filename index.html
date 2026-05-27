@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JCL - Jeunesse Consciente de Lakota</title>
+<style>
+:root {
+  --vert: #1E7E34;
+  --orange: #FF8C00;
+  --vert-fonce: #145c27;
+  --gris-fond: #f8f9fa;
+  --texte: #2c2c2c;
+}
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
+body { color: var(--texte); background: #fff; line-height:1.6; }
+header {
+  background: var(--vert);
+  color: white;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo-area { display:flex; align-items:center; gap:12px; }
+.logo-area img { height: 55px; }
+.logo-area h1 { font-size: 1.4rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+nav a:hover { color: var(--orange); }
+.hero {
+  background: linear-gradient(135deg, var(--vert), var(--orange));
+  color: white;
+  text-align: center;
+  padding: 80px 8%;
+}
+.hero h2 { font-size: 2.8rem; margin-bottom: 15px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+.hero p { font-size: 1.3rem; margin-bottom: 30px; max-width: 750px; margin-left:auto; margin-right:auto; }
+.btn {
+  background: var(--orange);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover { background: #e67e00; transform: translateY(-2px); }
+.slogan {
+  background: #f0f0f0;
+  text-align:center;
+  padding:15px;
+  font-weight:bold;
+  font-size:1.2rem;
+  color:var(--vert);
+  border-left:6px solid var(--orange);
+}
+section { padding: 70px 8%; }
+section h3 { font-size: 2.2rem; color: var(--vert); margin-bottom: 25px; text-align:center; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.card {
+  background: var(--gris-fond);
+  padding: 30px 25px;
+  border-radius: 12px;
+  border-top: 5px solid var(--orange);
+  text-align:center;
+}
+.card h4 { color: var(--vert); margin-bottom: 12px; font-size:1.3rem; }
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.gallery img {
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.contact-box {
+  background: var(--vert);
+  color:white;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  margin-top:30px;
+}
+.contact-box h4 { margin-bottom:15px; font-size:1.4rem; }
+form {
+  max-width:600px;
+  margin:30px auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+form input, form textarea {
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:1rem;
+}
+form button {
+  background:var(--orange);
+  color:white;
+  border:none;
+  padding:14px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 8%;
+  font-size: 0.9rem;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+@media(max-width: 768px){
+  header { flex-direction: column; gap: 10px; text-align:center; }
+  nav { margin-top:10px; }
+  nav a { margin: 0 10px; }
+  .hero h2 { font-size: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="Logo JCL">
+    <h1>JCL Lakota</h1>
+  </div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#actions">Nos Actions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <h2>Pour une Jeunesse de Lakota Unie et Prospère</h2>
+  <p>La JCL est un mouvement citoyen, structuré et ambitieux pour faire de vous des acteurs du développement, de la formation et de l’insertion professionnelle.</p>
+  <a href="#apropos" class="btn">Découvrir la JCL</a>
+</section>
+
+<div class="slogan">S’UNIR POUR BÂTIR LAKOTA</div>
+
+<section id="apropos">
+  <h3>Dans Quel Objectif la JCL a-t-elle été Créée ?</h3>
+  <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.1rem;">
+  Notre département regorge de talents : jeunes diplômés, artisans, passionnés. Pourtant, le chômage, le manque d’opportunités et l’isolement freinent trop de trajectoires.
+  <br><br>
+  <strong>Est-ce une fatalité ? Non.</strong> Personne ne viendra développer Lakota à notre place. C’est à nous, la jeunesse, de prendre notre destin en main.
+  C’est pour répondre à ce défi qu’est née la JCL.
+  </p>
+  
+  <div class="cards" style="margin-top:50px;">
+    <div class="card">
+      <h4>🌍 Ville Propre</h4>
+      <p>Opérations de salubrité et gestion des déchets pour une Lakota saine et accueillante.</p>
+    </div>
+    <div class="card">
+      <h4>🌱 Reboisement & Cacao</h4>
+      <p>Plantation d’arbres et projets agricoles pour sauvegarder l’environnement et créer des opportunités.</p>
+    </div>
+    <div class="card">
+      <h4>💼 Insertion Professionnelle</h4>
+      <p>Formations pratiques en digital, gestion, entrepreneuriat pour l’emploi des jeunes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="actions" style="background:var(--gris-fond);">
+  <h3>Nos Actions en Images</h3>
+  <div class="gallery">
+    <img src="actions1.jpg" alt="Ville propre JCL">
+    <img src="actions2.jpg" alt="Reboisement JCL">
+    <img src="actions3.jpg" alt="Formation JCL">
+    <img src="actions4.jpg" alt="Insertion professionnelle JCL">
+  </div>
+  <p style="text-align:center; margin-top:15px; color:#666; font-size:0.9rem;">
+  Remplace ces images par tes photos. Noms à utiliser : actions1.jpg, actions2.jpg, actions3.jpg, actions4.jpg
+  </p>
+  
+  <h3 style="margin-top:60px;">Actualités Récentes</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>PSG Academy à Lakota</h4>
+      <p>Le club Paris Saint Germain crée un centre de formation pour recruter les jeunes talents du département.</p>
+    </div>
+    <div class="card">
+      <h4>Sensibilisation Anti-Drogue</h4>
+      <p>Interventions du préfet Lassina Binaté dans les écoles pour protéger nos élèves.</p>
+    </div>
+    <div class="card">
+      <h4>Célébration de l’Excellence</h4>
+      <p>Le collège Dotémé Kého et le lycée Boga Doudou Emile récompensent les meilleurs élèves.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Rejoignez la JCL</h3>
+  <p style="text-align:center;">Tu veux rejoindre le mouvement, proposer un projet ou collaborer avec nous ?</p>
+  
+  <form action="mailto:ozigrejosias@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Nom" placeholder="Ton nom complet" required>
+    <input type="email" name="Email" placeholder="Ton email" required>
+    <textarea name="Message" rows="6" placeholder="Ton message" required></textarea>
+    <button type="submit">Envoyer le message</button>
+  </form>
+  
+  <div class="contact-box">
+    <h4>Contact Direct WhatsApp</h4>
+    <p>+225 01 70 43 43 34</p>
+    <p>+225 07 00 63 93 38</p>
+    <a href="https://chat.whatsapp.com/FL76pdmUqMO2UOMWrU5sRw" target="_blank" class="btn" style="margin-top:15px;">Rejoindre le Groupe WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Email :</strong> ozigrejosias@gmail.com</p>
+  <p>© 2026 Jeunesse Consciente de Lakota - JCL.ci</p>
+</footer>
+
+<a href="https://chat.whatsapp.com/FL76pdmUqMO2UOMWrU5sRw" class="whatsapp" target="_blank">WhatsApp</a>
+
+</body>
+</html>
